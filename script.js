@@ -295,10 +295,11 @@
   });
 
   resetBtn.addEventListener("click", () => {
-    showState("idle");
+    window.location.reload();
   });
 
   errorRetryBtn.addEventListener("click", () => {
-    showState("idle");
+    window.location.reload();
   });
+
 })();
