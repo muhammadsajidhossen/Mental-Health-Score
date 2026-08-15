@@ -9,8 +9,8 @@
   --surface:    #FFFFFF;
   --line:       #D6DED5;
 
-  --pine:       #21594A;
-  --pine-deep:  #163D33;
+  --pine:       #050505;
+  --pine-deep:  #0B2A4A;
   --pine-tint:  #E4EFE9;
 
   --amber:      #E3B341;
@@ -135,7 +135,7 @@ body {
   border: none;
   box-shadow: var(--shadow-lift);
   display: flex;
-  color: #EAF3EE;
+  color: #edeaf3;
 }
 
 /* =========================================================
@@ -152,7 +152,7 @@ fieldset.group:last-of-type { border-bottom: none; padding-bottom: 8px; }
 legend {
   font-family: var(--font-body);
   font-weight: 600;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 0.02em;
   color: var(--ink);
   display: flex;

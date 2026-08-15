@@ -18,7 +18,6 @@ app.add_middleware(
 )
 
 
-#A first Pydantic Model
 class StudentData(BaseModel):
     age                     : int = Field(..., ge=10, le=100)
     gender                  : Literal['Male', 'Female']
@@ -35,13 +34,9 @@ class StudentData(BaseModel):
 
 
 
-
-# Describe what we send back
 class PredictionResponse(BaseModel):
     predicted_mental_health_score:float
-    #6.777777 -> float
-
-
+    
 
 
 @app.get('/')
@@ -49,7 +44,7 @@ def greet():
     return {'Welcome to Sheryians AI School Guys'}
 
 
-@app.post('/predict', response_model=PredictionResponse) #6.77777
+@app.post('/predict', response_model=PredictionResponse) 
 def predict(data: StudentData):
    
    country_group = data.country if data.country in top_countries else "Other"
